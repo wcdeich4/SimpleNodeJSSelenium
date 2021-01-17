@@ -15,16 +15,4 @@ let service = new edge.ServiceBuilder(browserDriverPath).enableVerboseLogging().
 let driver = edge.Driver.createSession(options, service);
 
 let testURL = 'https://www.google.com/';
-driver.get(testURL).then(function () {
-    driver.findElement(webdriver.By.name('q')).sendKeys('webdriver\n').then(function () {
-        driver.getTitle().then(function (title) {
-            console.log(title)
-            if (title === 'webdriver - Google Search') {
-                console.log('Test passed');
-            } else {
-                console.log('Test failed');
-            }
-            //  driver.quit();
-        });
-    });
-});
+driver.get(testURL);
