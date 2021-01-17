@@ -9,7 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
+    "xvfb": "^0.4.0",
     "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }
